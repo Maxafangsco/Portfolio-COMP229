@@ -122,51 +122,46 @@ const data = [
 const ProjectCard = () => {
     const isLessThan600 = useMediaQuery("(max-width: 600px)");
 
-    const Item = styled(Paper)(({ theme }) => ({
-        backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
-        ...theme.typography.body2,
-        padding: theme.spacing(1),
-        textAlign: 'center',
-        color: theme.palette.text.secondary,
-      }));
+
 
   return (
-    // <Box
-    // item
-    //   display="flex"
-    //   justifyContent="center"
-    //   alignItems="center"
-    //   flexWrap="wrap"
-    // >
-    //   {data.map((data) => (
-    //     
-    // </Box>
-    <Box sx={{ width: '100%' }}>
-       <Grid container spacing={2}>
+  
+    <Box >
+       <Grid container spacing={2} justifyContent={'center'} gap={2} mb={2} >
       {data.map((data) => (
-        <Grid item key={data.id} xs={12} sm={6} md={3}>
-          <Link href={data.link} passHref={true} target="_blank">
+        <Grid item 
+        key={data.id}
+         xs={12}
+          sm={6}
+           md={3}
+           
+         m={0.5}
+           justifyContent="center"
+           border="1px solid #d9dbdf"
+           boxShadow="5px 5px 5px #d9dbdf"
+           borderRadius="5px"
+        
+           >
+          <Link to={data.link} passHref={true} target="_blank"   style={{ textDecoration: 'none' }} >
             <Box
               display="flex"
-              width="100%"
-              height={250}
               flexDirection="column"
-              px={5}
-              pt={5}
-              _hover={{ bg: 'blue.500', color: 'black' }}
+             color={'black'}
+           
+              _hover={{ bgcolor: 'blue.500', color: 'black' }}
               _focus={{ shadow: 'outline' }}
             >
               <Typography fontSize={25} fontWeight={700}>
                 {data.name}
               </Typography>
-              <Typography noOfLines={[1, 2, 3, 4]} py={5} >
+              <Typography  py={3} >
                 {data.text}
               </Typography>
-              <Box display="flex" justifyContent="space-between" mt={2} >
+              <Box display="flex" justifyContent="space-between" mt={1} >
                 <Box>{data.date}</Box>
                 <Box display="flex" flexWrap="wrap">
               
-                  {/* {data.logo.map((logo, index) => (
+                  {data.logo.map((logo, index) => (
                     <Box
                       key={index}
                       display="inline-flex"
@@ -176,14 +171,15 @@ const ProjectCard = () => {
                       // backgroundColor="#ccc"
                       // color="#fff"
                       margin="5px"
-                      bg={"orange.200"}
+                    
+                      bgcolor={'#FFD866'}
                       // border='2px solid black'
                       // whiteSpace="nowrap"
-                      fontSize={8}
+                      fontSize={10}
                     >
                       {logo}
                     </Box>
-                  ))} */}
+                  ))}
                 </Box>
               </Box>
             </Box>

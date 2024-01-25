@@ -21,9 +21,11 @@ const Projects = () => {
       {/* Main content section */}
       <Box display='flex' flexDirection={isLessThan600 ? 'column' : 'row'}>
         {/* Website snapshot */}
+       
         <Box flex={4} display="flex" justifyContent="center" alignItems="center">
           <Box>
-            <div style={{ border: '2px solid #ccc', borderRadius: '10px', width: '800px', height: '600px', marginTop: "60px" }}>
+          <Typography variant='h4' mt={'60px'} textAlign={'center'}>Recent Project</Typography>
+            <div style={{ border: '2px solid #ccc', borderRadius: '10px', width: '800px', height: '600px', marginTop: "20px" }}>
               <iframe
                 title="Website Snapshot"
                 src="https://www.aproplat.com/"
@@ -54,7 +56,7 @@ const Projects = () => {
       </Box>
 
       {/* Header for completed projects */}
-      <Typography fontSize={40} fontWeight={700} textAlign="center" my={20}>
+      <Typography fontSize={40} fontWeight={700} textAlign="center" my={10}>
         Projects Completed
       </Typography>
 
