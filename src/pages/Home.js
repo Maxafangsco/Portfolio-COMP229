@@ -1,3 +1,9 @@
+/*
+File Name: Home.js
+Student's Name: Agwo Tekeh Maxmillian Afanga
+Student ID: [301325202]
+*/
+
 import { Avatar, Box, Button, Typography } from '@mui/material'
 import React from 'react'
 import { TextWrap, Wrapper } from './Home.styles'
@@ -5,15 +11,20 @@ import amaxmill from '../images/amaxmill.jpeg'
 import { useNavigate } from 'react-router-dom';
 
 
+
+/**
+ * Component representing the home page.
+ * @returns {JSX.Element} Home component.
+ */
 const Home = () => {
 
+  // React Router hook for navigation
   const navigate = useNavigate();
 
+  // Function to handle button click to navigate to contact page
   const handleButtonClick = () => {
     navigate('/contact'); // Redirect to the '/contact' page
   };
-
-
   return (
    <Wrapper>
     <TextWrap>

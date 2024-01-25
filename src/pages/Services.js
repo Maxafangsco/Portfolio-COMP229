@@ -1,11 +1,11 @@
+/*
+File Name: Services.js
+Student's Name: Agwo Tekeh Maxmillian Afanga
+Student ID: [301325202]
+*/
 import { Box, Divider, Icon, Stack, Tooltip, Typography, useMediaQuery } from '@mui/material'
 import React from 'react'
-import { IconButton } from '@mui/material';
-import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
-import GitHubIcon from '@mui/icons-material/GitHub';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import XIcon from '@mui/icons-material/X';
-import InstagramIcon from '@mui/icons-material/Instagram';
+
 
 import HtmlIcon from '@mui/icons-material/Html';
 import CssIcon from '@mui/icons-material/Css';
@@ -32,6 +32,11 @@ import {
   SiPostgresql,
 } from "react-icons/si";
 import { Link } from 'react-router-dom';
+
+/**
+ * Component representing services provided.
+ * @returns {JSX.Element} Services component.
+ */
 
 const Services = () => {
   const isLessThan600 = useMediaQuery("(max-width: 600px)");
