@@ -1,10 +1,19 @@
 import { Avatar, Box, Button, Typography } from '@mui/material'
 import React from 'react'
 import { TextWrap, Wrapper } from './Home.styles'
-import amaxmill from '../images/amaxmill.jpg'
+import amaxmill from '../images/amaxmill.jpeg'
+import { useNavigate } from 'react-router-dom';
 
 
 const Home = () => {
+
+  const navigate = useNavigate();
+
+  const handleButtonClick = () => {
+    navigate('/contact'); // Redirect to the '/contact' page
+  };
+
+
   return (
    <Wrapper>
     <TextWrap>
@@ -13,7 +22,7 @@ const Home = () => {
                   and building software <br /> 
                   changing the world
                   </Typography>
-     <Button size='lg' sx={{backgroundColor: "black", color: "white"}}>Get in touch</Button>
+     <Button size='lg' sx={{backgroundColor: "#E9AF20", color: "white"}} onClick={handleButtonClick}>Get in touch</Button>
     </TextWrap>
 
     <Box>

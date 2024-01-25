@@ -15,7 +15,9 @@ import AdbIcon from '@mui/icons-material/Adb';
 import { Link } from 'react-router-dom';
 import {pages} from './Navlink'
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
-import { ListItem } from '@mui/material';
+import { Icon, ListItem } from '@mui/material';
+import logo from '../images/logo.png'
+import { Image } from '@mui/icons-material';
 
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
@@ -43,12 +45,12 @@ const Navbar = () => {
     <AppBar position="sticky">
     <Container maxWidth="xl">
       <Toolbar disableGutters>
-        <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
+        {/* <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} /> */}
         <Typography
           variant="h6"
           noWrap
           component="a"
-          href="#app-bar-with-responsive-menu"
+          href="/"
           sx={{
             mr: 2,
             display: { xs: 'none', md: 'flex' },
@@ -59,7 +61,8 @@ const Navbar = () => {
             textDecoration: 'none',
           }}
         >
-          LOGO
+          
+          <img src={logo} alt="logo" width={100} height={80} />
         </Typography>
 
         <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -101,12 +104,12 @@ const Navbar = () => {
             ))}
           </Menu>
         </Box>
-        <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
+        {/* <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} /> */}
         <Typography
           variant="h5"
           noWrap
           component="a"
-          href="#app-bar-with-responsive-menu"
+          href="/"
           sx={{
             mr: 2,
             display: { xs: 'flex', md: 'none' },
@@ -118,7 +121,7 @@ const Navbar = () => {
             textDecoration: 'none',
           }}
         >
-          LOGO
+           <img src={logo} alt="logo" width={90} height={60} />
         </Typography>
         <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
           {pages.map((page) => (

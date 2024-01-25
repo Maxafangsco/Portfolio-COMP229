@@ -11,8 +11,8 @@ const Contact = () => {
     alignItems: "center",
     justifyContent: "space-around",
     marginBottom: "1rem",
-   margin: "1rem",
-   width: "100%"
+   margin: "8rem  8rem",
+  // width: "100%"
   }));
 
   return (
@@ -20,7 +20,7 @@ const Contact = () => {
      <Box>
          <ContactForm />
     </Box>
-    <Box>
+    <Box >
     <Card >
       <CardContent>
         <Typography variant="h4" gutterBottom>

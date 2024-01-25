@@ -9,19 +9,18 @@ const Projects = () => {
   return (
     <Box>
       <Box display='flex' flexDirection={isLessThan600 ? 'column' : 'row'}>
-        <Box flex={4} display="flex"  justifyContent="center"
+        <Box flex={4} display="flex" justifyContent="center"
           alignItems="center" >
-            <Box>
-              <Image
-              mt={isLessThan600 ? 5 : 100}
-                src="/business.svg"
-                width={isLessThan600 ? 200 : 400}
-                height={isLessThan600 ? 200 : 400}
-                alt="Maxmillian Avatar"
-                // className={styles.firstDivLeft}
+          <Box>
+            <div style={{ border: '2px solid #ccc', borderRadius: '10px', width: '800px', height: '600px', marginTop: "60px" }}>
+              <iframe
+                title="Website Snapshot"
+                src="https://www.aproplat.com/"
+                style={{ width: '100%', height: '100%', border: 'none', borderRadius: '8px' }}
               />
-            </Box>
-          
+            </div>
+          </Box>
+
         </Box>
         <Box
           flex={4}
@@ -29,7 +28,7 @@ const Projects = () => {
           justifyContent="center"
           alignItems="center"
           flexDirection="column"
-          // className={styles.firstDivRight}
+        // className={styles.firstDivRight}
         >
           <Typography fontSize={40} fontWeight={900} textAlign="center" >
             Projects
@@ -44,7 +43,7 @@ const Projects = () => {
         </Box>
       </Box>
 
-      <Typography fontSize={40} fontWeight={700} textAlign="center"  my={20}>
+      <Typography fontSize={40} fontWeight={700} textAlign="center" my={20}>
         Projects Completed
       </Typography>
 

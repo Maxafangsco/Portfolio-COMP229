@@ -20,6 +20,15 @@ const ContactForm = () => {
     e.preventDefault();
     // You can handle the form submission logic here, such as sending data to a server or performing some action.
     console.log('Form data submitted:', formData);
+
+     // Show alert
+     if(formData.name !="" && formData.email != "" && formData.message !=""){
+      alert("Message sent successfully");
+     }else{
+      alert("Fill the form before sumbitting...")
+     }
+    
+
     // Reset the form after submission
     setFormData({
       name: '',

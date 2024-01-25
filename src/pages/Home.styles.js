@@ -12,7 +12,7 @@ export const Wrapper = styled(Box)(({ theme }) => ({
 }));
 
 
-export const TextWrap = styled(Box)(({ theme }) => ({
+export const TextWrap = styled(Box)(() => ({
    
     display: "flex",
     alignItems: "center",
