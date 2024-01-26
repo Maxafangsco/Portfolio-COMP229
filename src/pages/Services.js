@@ -42,7 +42,7 @@ const Services = () => {
   const isLessThan600 = useMediaQuery("(max-width: 600px)");
   return (
     <Box>
-      <Typography variant='h2' textAlign={'center'}>FullStack Developer</Typography>
+      <Typography variant='h2' mt={3} textAlign={'center'}>What I can do</Typography>
 
       <Box>
        
@@ -57,14 +57,14 @@ const Services = () => {
 
           <Box my={4}>
             <Stack px={5}  flexDirection={'row'} gap={5} justifyContent={'center'}>
-
-              <Icon as={HtmlIcon} w={isLessThan600 ? 10 : 20} h={isLessThan600 ? 10 : 20} color="orange.500" />
-              <Icon as={CssIcon} w={isLessThan600 ? 10 : 20} h={isLessThan600 ? 10 : 20} color="blue.500" />
-              <Icon as={FaReact} w={isLessThan600 ? 10 : 20} h={isLessThan600 ? 10 : 20} color="red.500" />
-              <Icon as={JavascriptIcon} w={isLessThan600 ? 10 : 20} h={isLessThan600 ? 10 : 20} color="red.500" />
-              <Icon as={FaNodeJs} w={isLessThan600 ? 10 : 20} h={isLessThan600 ? 10 : 20} color="green.500" />
-              <Icon as={SiNpm} w={isLessThan600 ? 10 : 20} h={isLessThan600 ? 10 : 20} color="red.500" />
-              <Icon as={SiNextdotjs} w={isLessThan600 ? 10 : 20} h={isLessThan600 ? 10 : 20} color="black.500" />
+            
+              <Icon as={HtmlIcon} fontSize="large" color="orange" />
+              <Icon as={CssIcon} fontSize="large" color="blue.500" />
+              <Icon as={FaReact} fontSize="large" color="red.500" />
+              <Icon as={JavascriptIcon} fontSize="large"color="red.500" />
+              <Icon as={FaNodeJs} fontSize="large" color="green.500" />
+              <Icon as={SiNpm} fontSize="large" color="red.500" />
+              <Icon as={SiNextdotjs} fontSize="large" color="black.500" />
             </Stack>
           </Box>
 
@@ -117,30 +117,30 @@ const Services = () => {
 
               <Tooltip label="AWS" aria-label="A tooltip">
                 <span>
-                  <Icon as={FaAws} w={isLessThan600 ? 10 : 20} h={isLessThan600 ? 10 : 20} color="orange.500" />
+                  <Icon as={FaAws} fontSize="large"color="orange.500" />
                 </span>
               </Tooltip>
 
               <Tooltip label="Azure" aria-label="A tooltip">
                 <span>
-                  <Icon as={SiMicrosoftazure} w={isLessThan600 ? 10 : 20} h={isLessThan600 ? 10 : 20} color="blue.500" />
+                  <Icon as={SiMicrosoftazure} fontSize="large"color="blue.500" />
                 </span>
               </Tooltip>
 
               <Tooltip label="Postgresql" aria-label="A tooltip">
                 <span>
-                  <Icon as={SiPostgresql} w={isLessThan600 ? 10 : 20} h={isLessThan600 ? 10 : 20} />
+                  <Icon as={SiPostgresql} fontSize="large"/>
                 </span>
               </Tooltip>
 
               <Tooltip label="MongoDB" aria-label="A tooltip">
                 <span>
-                  <Icon as={SiMongodb} w={isLessThan600 ? 10 : 20} h={isLessThan600 ? 10 : 20} color="green.500" />
+                  <Icon as={SiMongodb} fontSize="large"color="green.500" />
                 </span>
               </Tooltip>
               <Tooltip label="Docker" aria-label="A tooltip">
                 <span>
-                  <Icon as={SiDocker} w={isLessThan600 ? 10 : 20} h={isLessThan600 ? 10 : 20} color="blue.500" />
+                  <Icon as={SiDocker} fontSize="large"color="blue.500" />
                 </span>
               </Tooltip>
             </Stack>

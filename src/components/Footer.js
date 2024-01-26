@@ -4,17 +4,17 @@ import { Box, Button, Divider, Icon } from '@mui/material'
 import { pages, SocialLink } from './Navlink'
 import { Link } from 'react-router-dom'
 import SocialIcons from './SocialIcons'
-
+import logo from '../images/logo.png'
 
 const Footer = () => {
   return (
     <footer > 
-         <Divider  color="#0000FF" sx={{ height: 2, width: '100%' }}/>
+         <Divider  color="#E9AF20" sx={{ height: 2, width: '100%' }}/>
     <Wrapper>
   
-        <Box> 
-
-            Logo  Maxafangsco
+        <Box display={'flex'} alignItems={'center'}> 
+        <img src={logo} alt="logo" width={100} height={80} />
+             I solve the problem
             
         </Box>
 
