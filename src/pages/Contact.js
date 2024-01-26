@@ -42,16 +42,16 @@ const Contact = () => {
             <Divider />
             {/* Individual contact details */}
             <Typography variant="h4">
-              <strong>Name:</strong> John Doe
+              <strong>Name:</strong> Agwo Tekeh Maxmillian Afanga
             </Typography>
             <Typography variant="h4">
-              <strong>Email:</strong> john@example.com
+              <strong>Email:</strong> agwotekeh@gmail.com
             </Typography>
             <Typography variant="h4">
-              <strong>Phone:</strong> +1 555-1234
+              <strong>Phone:</strong> +1 4165614002
             </Typography>
             <Typography variant="h4">
-              <strong>Address:</strong> 123 Main Street, Cityville, USA
+              <strong>Address:</strong> 123 Main Street, Scaborough Toronto
             </Typography>
           </CardContent>
         </Card>
